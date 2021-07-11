@@ -1,7 +1,8 @@
-Solution name fr4nc3.com.tictactoe
+# fr4nc3.com.tictactoe
+
 open project and build no error or warning
 
-Rest api
+## Rest api
 
 - GameMove model
 - GameMoveResponse model
@@ -29,6 +30,8 @@ Rest api
   to
   \_result.Body = SafeJsonConvert.DeserializeObject<object>(\_responseContent, this.DeserializationSettings);
 
+### Self play
+
 - I was able to write calculatemove gameboard
 - to follow these rules
 - take player symbol and random get an available position
@@ -38,6 +41,9 @@ Rest api
 - in the MSTest to play I created a loop that switch between X and O player to request next movement
 - from the HW example, I was not clear if after the player symbol moves the other player also moves.
 - I mean, It can be two movements per request, but I decided one move per request, and the player need to be changing by request.
+
+### MSTest
+
 - MSTest for calculatemove
 - single game
 - 100 games in a loop with results
@@ -49,8 +55,12 @@ Rest api
 - executemove MStest 20 test for differents constrains and restriction for the game in the code
 - calulatemove MStest 8 test for differents constrains and restriction for the game in the code and a self play and 100 time self play
 
-References
+### References
+
 https://medium.com/c-sharp-progarmming/xml-comments-swagger-net-core-a390942d3329
+
 https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-5.0&tabs=visual-studio
+
 https://docs.microsoft.com/en-us/aspnet/core/tutorials/web-api-help-pages-using-swagger?view=aspnetcore-5.0
+
 https://docs.microsoft.com/en-us/aspnet/core/tutorials/getting-started-with-swashbuckle?view=aspnetcore-5.0&tabs=visual-studio
